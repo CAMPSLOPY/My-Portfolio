@@ -1,0 +1,207 @@
+header {
+    width: 250px;
+    height: 100%;
+    background: #d8dbe2;
+    position: fixed;
+    top: 0;
+    left: 0;
+    box-shadow: 0px 10px 10px rgba($color: #000000, $alpha: 0.2),
+        0px 20px 40px rgba($color: #000000, $alpha: 0.2);
+    z-index: 100;
+    overflow-x: hidden;
+
+
+}
+
+.name {
+    text-align: center;
+    margin: 4rem 0rem;
+    border-bottom: 1px solid #ceb40a;
+    width: 100%;
+    padding: 1.5rem 0rem;
+
+    h3 {
+        font-family: 'Raleway', sans-serif;
+        color: #ceb40a;
+        font-weight: bold;
+    }
+
+    p {
+        font-size: 1.5rem;
+        color: $background2;
+        font-weight: 900;
+    }
+}
+
+nav {
+    display: flex;
+    @include flex(center, center, column);
+    position: relative;
+    top: -6%;
+    padding-bottom: 3.2rem;
+
+    .home {
+        font-size: 2rem;
+        padding-right: 2px;
+        color: $background-color;
+        left: 20px;
+        position: absolute;
+    }
+
+    .fa-user {
+        color: green;
+        font-size: 2rem;
+        left: 20px;
+        position: absolute;
+    }
+
+    .task {
+        color: rgb(0, 140, 255);
+        font-size: 2rem;
+        left: 20px;
+        position: absolute;
+    }
+
+    .badge {
+        color: rgb(71, 3, 71);
+        font-size: 2rem;
+        left: 20px;
+        position: absolute;
+    }
+
+    .signature {
+        font-size: 2rem;
+        color: rgb(59, 211, 231);
+        left: 20px;
+        position: absolute;
+    }
+
+    ul {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        position: relative;
+
+        .home-user {
+            &:hover {
+                border-left: 5px solid $background-color;
+            }
+        }
+
+        .first-user {
+            &:hover {
+                border-left: 5px solid green;
+            }
+        }
+
+        .task-user {
+            &:hover {
+                border-left: 5px solid rgb(0, 140, 255);
+            }
+        }
+
+        .badge-user {
+            &:hover {
+                border-left: 5px solid rgb(71, 3, 71);
+            }
+        }
+
+        .sign-user {
+            &:hover {
+                border-left: 5px solid rgb(59, 211, 231);
+            }
+        }
+
+    }
+
+    a {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 3rem 3rem;
+        width: 100%;
+        position: relative;
+        transition: all 0.2s linear;
+        letter-spacing: monospace;
+        font-family: 'Montserrat', sans-serif;
+        font-size: 1.5rem;
+        font-weight: bold;
+        position: relative;
+        margin-top: 3.3rem;
+        
+        &:hover {
+            background: rgba(221, 221, 221, 0.096);
+            margin-left: 2px;
+
+        }
+    }
+}
+
+.socials {
+    position: relative;
+    padding-top: 3.3rem;
+   
+    
+}
+
+.nav-socials {
+   position: relative;
+   left: 5%;
+   
+    span{
+        display: flex;
+        position: relative;
+       margin-top: 3rem;
+       justify-content: center;
+       align-items: center;
+
+       a{
+        position: absolute;
+       }
+      
+    }
+    .fa-twitter {
+        color: rgb(0, 153, 255);
+
+
+
+        &:hover {
+            color: rgba(0, 153, 255, 0.815);
+            transition: all .5s ease-out;
+        }
+
+    }
+
+    .fa-instagram {
+        color: #e1306c;
+        &:hover{
+            color: #ec739b;
+    
+        }
+    
+    }
+    
+    .fa-github {
+        color: black;
+        &:hover{
+            color: rgb(58, 55, 55);
+        }
+    }
+    
+    .fa-linkedin {
+        color: rgb(0, 140, 255);
+        &:hover{
+            color: rgb(100, 177, 240);
+        }
+    }
+    
+    .a-icon {
+        font-size: 2.5rem;
+        margin: 1rem 1rem;
+        text-align: center;
+    }
+    
+}
+
