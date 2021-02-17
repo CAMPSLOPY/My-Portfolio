@@ -1,0 +1,28 @@
+<!--mobile nav-->
+<div id="mobile-nav" class="mobile-nav">
+  <div class="mobile-nav-content">
+    <ul>
+      <a id="" class="" href="#home">
+        <i class="fas fa-home home-mobile"></i>
+        <span>Home</span>
+      </a>
+      <a id="" class="" href="#portfolio">
+        <i class="fas fa-tasks task-mobile"></i>
+        <span>Project</span>
+      </a>
+
+      <a id="" class="" href="#contact">
+        <i class="fas fa-id-badge badge-mobile"></i>
+        <span class="contact-mobile">Contact</span>
+      </a>
+      <a id="" class="" href="#resume">
+        <i class="fas fa-file-signature resume-mobile"></i>
+        <span>Resume</span>
+      </a>
+    </ul>
+    <button id="close">
+      <i class="fas fa-times text-6xl relative top-10 bottom-0"></i>
+    </button>
+  </div>
+</div>
+<!--mobile nav end-->
