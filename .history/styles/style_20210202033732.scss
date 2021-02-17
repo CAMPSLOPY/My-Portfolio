@@ -1,0 +1,184 @@
+$header1 : 2.5rem;
+$header2: 4rem;
+$header3: 2.5rem;
+$header4: 2rem;
+$text: 2.5rem;
+$background-color: #AE2A76;
+$background2: #000000;
+$gray-text: #2c2c2c;
+$line-text : #FF00D6;
+$textColor: #fff;
+
+@mixin flex($justify, $align, $direction) {
+    justify-content: $justify;
+    align-items: $align;
+    flex-direction: $direction;
+    display: flex;
+}
+@import 'global';
+@import 'sideNav';
+@import 'hero';
+@import 'portfolio';
+@import 'contact';
+
+@media screen and (max-width: 900px){
+    html{
+        font-size: 45%;
+    }
+    .mobile-nav{
+        background-color: black;
+        color: white;
+       width: 100%;
+        min-height: 100vh;
+        position: relative;
+        z-index: 200;
+        
+        
+
+        .mobile-nav-content{
+            display: flex;
+            width: 85%;
+            margin: auto;
+            justify-content: space-between;
+            position: relative;
+            ul{
+                display: flex;
+                flex-direction: column;
+               justify-content: space-evenly;
+               position: absolute;
+               top: 150px;
+               left: 45px;
+               
+               a{
+                padding: 2rem;
+                font-size: 4rem;
+                span{
+                    margin: 0 2rem;
+                    
+                }
+                .contact-mobile{
+                    position: absolute;
+                    left: 50px;
+                    
+                }
+                
+                .home-mobile{
+                    color: $background-color;
+                }
+                .task-mobile{
+                    color: rgb(0, 140, 255);
+                }
+                .badge-mobile{
+                    color: rgb(71, 3, 71);
+                }
+                .resume-mobile{
+                    color: rgb(59, 211, 231);
+                }
+               }
+            }
+            button{
+                position: absolute;
+                right: 0;
+                
+            }
+        }
+        
+    }
+    header{
+        position: sticky;
+        width: 100%;
+        min-height: 10vh;
+        display: flex;
+        justify-content: space-around;
+       align-items: center;
+
+        .name{
+            border-bottom: none;
+            padding: 0px;
+            display: flex;
+            align-items: flex-start;
+
+            h3{
+                font-size: 3rem;
+                margin-left: 2rem;
+                color: black;
+            }
+            p{
+                display: none;
+            }
+        }
+        nav{
+            display:none;
+        }
+       
+        #socials{
+            display: none;
+        }
+    }
+    .nav-section{
+        h1{
+            display: flex;
+            color: green;
+        }
+    }
+    #main-section{
+        width: 100%;
+        margin-left: 0;
+    }
+    .btn-scroll{
+        display: none;
+    }
+    .container{
+        flex-basis: 900px;
+
+        .screen{
+            background-color: white;
+        }
+    }
+    .screen-body{
+       display: flex;
+       flex-direction: column;
+    }
+    .overlay-body{
+        display: none;
+    }
+    .hero{
+        background-color: black;
+        
+        .hero-image{
+            background-color: #d8dbe2;
+            display: none;
+            p{
+                color: white;
+            }
+            img{
+                display: none;
+            }
+        }
+    }
+    #contact{
+        background-color: white;
+    }
+  .hero-text{
+   display: none;
+   z-index: -3;
+     h1{
+         display: none;
+     }
+     h2{
+         display: none;
+     }
+  }
+
+  .hero-image{
+      left: 10%;
+
+      p{
+        font-size: 1rem;
+    }
+  }
+  
+}
+
+
+.mobile-nav.show-nav

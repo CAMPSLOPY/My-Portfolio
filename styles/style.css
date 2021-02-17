@@ -124,6 +124,7 @@ header {
   font-family: 'Raleway', sans-serif;
   color: #ceb40a;
   font-weight: bold;
+  font-size: 2rem;
 }
 
 .name p {
@@ -326,6 +327,18 @@ nav a:hover {
   width: 85%;
   margin: 0 0 0 auto;
   margin-left: 200px;
+}
+
+#main-section .mobile-nav {
+  display: none;
+}
+
+@extends .show-nav {
+  #main-section .mobile-nav {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
 }
 
 .hero {
@@ -892,6 +905,64 @@ nav a:hover {
   html {
     font-size: 45%;
   }
+  .mobile-nav {
+    background-color: black;
+    color: white;
+    width: 100%;
+    min-height: 100vh;
+    position: relative;
+    z-index: 200;
+  }
+  .mobile-nav .mobile-nav-content {
+    width: 85%;
+    margin: auto;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    position: relative;
+  }
+  .mobile-nav .mobile-nav-content ul {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: space-evenly;
+        -ms-flex-pack: space-evenly;
+            justify-content: space-evenly;
+    position: absolute;
+    top: 150px;
+    left: 45px;
+  }
+  .mobile-nav .mobile-nav-content ul a {
+    padding: 2rem;
+    font-size: 4rem;
+  }
+  .mobile-nav .mobile-nav-content ul a span {
+    margin: 0 2rem;
+  }
+  .mobile-nav .mobile-nav-content ul a .contact-mobile {
+    position: absolute;
+    left: 50px;
+  }
+  .mobile-nav .mobile-nav-content ul a .home-mobile {
+    color: #AE2A76;
+  }
+  .mobile-nav .mobile-nav-content ul a .task-mobile {
+    color: #008cff;
+  }
+  .mobile-nav .mobile-nav-content ul a .badge-mobile {
+    color: #470347;
+  }
+  .mobile-nav .mobile-nav-content ul a .resume-mobile {
+    color: #3bd3e7;
+  }
+  .mobile-nav .mobile-nav-content button {
+    position: absolute;
+    right: 0;
+  }
   header {
     position: -webkit-sticky;
     position: sticky;
@@ -900,31 +971,41 @@ nav a:hover {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
   }
   header .name {
     border-bottom: none;
-    text-align: left;
-    -webkit-box-flex: 1;
-        -ms-flex: 1 1 40rem;
-            flex: 1 1 40rem;
-    padding: 0rem 2rem;
+    padding: 0px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
   }
   header .name h3 {
-    display: none;
+    font-size: 3rem;
+    margin-left: 2rem;
+    color: black;
   }
   header .name p {
     display: none;
   }
   header nav {
-    -webkit-box-flex: 1;
-        -ms-flex: 1 1 40rem;
-            flex: 1 1 40rem;
+    display: none;
   }
-  header nav ul {
+  header #socials {
     display: none;
   }
   .nav-section h1 {
-    display: none;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    color: green;
   }
   #main-section {
     width: 100%;
@@ -957,9 +1038,13 @@ nav a:hover {
   }
   .hero .hero-image {
     background-color: #d8dbe2;
+    display: none;
   }
   .hero .hero-image p {
     color: white;
+  }
+  .hero .hero-image img {
+    display: none;
   }
   #contact {
     background-color: white;

@@ -1,0 +1,206 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Montserrat', sans-serif;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    animation: open .9s ease-in;
+    
+    overflow-X: hidden;
+}
+
+
+
+html {
+    font-size: 62.5%;
+    scroll-behavior: smooth;
+  
+
+}
+
+h1 {
+    font-size: $header1;
+
+}
+
+h2 {
+    font-size: $header2;
+}
+
+h3 {
+    font-size: $header3;
+
+}
+
+h4,
+h5 {
+    font-size: $header4;
+}
+
+ul {
+    list-style: none;
+}
+
+li,
+p,
+input,
+label,
+a {
+    font-size: $text;
+}
+a {
+    text-decoration: none;
+    color: $gray-text;
+}
+
+@keyframes open{
+    0%{
+        opacity: 0;
+    }
+    100%{
+        opacity: 1;
+    }
+}
+
+.overlay-body{
+    overflow: hidden;
+}
+.overlay{
+    width: 80%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    z-index: 99;
+    
+}
+
+.first {
+    background: #ceb40a;
+    
+  }
+  
+  .second {
+    background: #d8dbe2;
+    left: 33.3%;
+  }
+  
+  .third {
+    background: #0c0c0b;
+    left: 63.6%;
+    overflow: hidden;
+  }
+
+  .mobile-nav{
+    z-index: 30;
+    width: 100%;
+    min-height: 100vh;
+    background-color: black;
+    color: white;
+    display: flex;
+    justify-content: space-between;
+
+ .home {
+        font-size: 2rem;
+        padding-right: 2px;
+        color: $background-color;
+        left: 20px;
+        position: absolute;
+    }
+
+    .fa-user {
+        color: green;
+        font-size: 2rem;
+        left: 20px;
+        position: absolute;
+    }
+
+    .task {
+        color: rgb(0, 140, 255);
+        font-size: 2rem;
+        left: 20px;
+        position: absolute;
+    }
+
+    .badge {
+        color: rgb(71, 3, 71);
+        font-size: 2rem;
+        left: 20px;
+        position: absolute;
+    }
+
+    .signature {
+        font-size: 2rem;
+        color: rgb(59, 211, 231);
+        left: 20px;
+        position: absolute;
+    }
+
+    ul {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        position: relative;
+
+        .home-user {
+            &:hover {
+                border-left: 5px solid $background-color;
+            }
+        }
+
+        .first-user {
+            &:hover {
+                border-left: 5px solid green;
+            }
+        }
+
+        .task-user {
+            &:hover {
+                border-left: 5px solid rgb(0, 140, 255);
+            }
+        }
+
+        .badge-user {
+            &:hover {
+                border-left: 5px solid rgb(71, 3, 71);
+            }
+        }
+
+        .sign-user {
+            &:hover {
+                border-left: 5px solid rgb(59, 211, 231);
+            }
+        }
+
+    }
+
+    a {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 3rem 3rem;
+        width: 100%;
+        position: relative;
+        transition: all 0.2s linear;
+        letter-spacing: monospace;
+        font-family: 'Montserrat', sans-serif;
+        font-size: 1.5rem;
+        font-weight: bold;
+        position: relative;
+        margin-top: 3.3rem;
+        
+        &:hover {
+            background: rgba(221, 221, 221, 0.096);
+            margin-left: 2px;
+
+        }
+    }
+    
+}
+
