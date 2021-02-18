@@ -182,22 +182,13 @@ const close = document.getElementById("close");
 // to open the mobile nav
 
 open.addEventListener("click", () => {
-  showNav();
+  modalSection.style.display = "flex";
 });
 close.addEventListener("click", () => {
-  showNav();
+  modalSection.classList.toggle
 });
 links.forEach((link) => {
   link.addEventListener("click", () => {
-    modalSection.classList.toggle("nav-open");
     navLinks.classList.toggle("nav-open");
   });
 });
-
-function showNav() {
-  if (modalSection.style.display == "none") {
-    modalSection.style.display = "flex";
-  } else {
-    modalSection.style.display = "none";
-  }
-}

@@ -185,7 +185,7 @@ open.addEventListener("click", () => {
   showNav();
 });
 close.addEventListener("click", () => {
-  showNav();
+  modalSection.style.display = "none";
 });
 links.forEach((link) => {
   link.addEventListener("click", () => {

@@ -182,22 +182,15 @@ const close = document.getElementById("close");
 // to open the mobile nav
 
 open.addEventListener("click", () => {
-  showNav();
+  open.classList.toggle()
+  modalSection.classList.toggle("nav-open");
 });
 close.addEventListener("click", () => {
-  showNav();
+  navLinks.classList.toggle("nav-open");
+  modalSection.style.display = "none";
 });
 links.forEach((link) => {
   link.addEventListener("click", () => {
-    modalSection.classList.toggle("nav-open");
     navLinks.classList.toggle("nav-open");
   });
 });
-
-function showNav() {
-  if (modalSection.style.display == "none") {
-    modalSection.style.display = "flex";
-  } else {
-    modalSection.style.display = "none";
-  }
-}

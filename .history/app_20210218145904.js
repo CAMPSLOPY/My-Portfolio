@@ -185,7 +185,7 @@ open.addEventListener("click", () => {
   showNav();
 });
 close.addEventListener("click", () => {
-  showNav();
+  modalSection.style.display = "none";
 });
 links.forEach((link) => {
   link.addEventListener("click", () => {
@@ -194,10 +194,13 @@ links.forEach((link) => {
   });
 });
 
-function showNav() {
-  if (modalSection.style.display == "none") {
-    modalSection.style.display = "flex";
-  } else {
-    modalSection.style.display = "none";
-  }
+
+
+function showNav (){
+if(modalSection.style.display== 'none'){
+  modalSection.style.display = 'flex';
 }
+}else{
+  modalSection.style.display = 'none';
+}
+

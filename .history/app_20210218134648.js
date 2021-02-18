@@ -176,28 +176,24 @@ sideContact.addEventListener("click", () => {
 
 const open = document.getElementById("open");
 const modalSection = document.getElementById("mobile-nav-content");
+const close = document.getElementById("close");
 const navLinks = document.querySelector(".nav-links");
 const links = navLinks.querySelectorAll("a");
-const close = document.getElementById("close");
 // to open the mobile nav
 
 open.addEventListener("click", () => {
-  showNav();
+  modalSection.style.display = 'flex';
+  navLinks.classList.toggle("nav-open");
+  
 });
 close.addEventListener("click", () => {
-  showNav();
-});
-links.forEach((link) => {
-  link.addEventListener("click", () => {
-    modalSection.classList.toggle("nav-open");
-    navLinks.classList.toggle("nav-open");
-  });
+  modalSection.style.display = "none";
 });
 
-function showNav() {
-  if (modalSection.style.display == "none") {
-    modalSection.style.display = "flex";
-  } else {
-    modalSection.style.display = "none";
-  }
-}
+links.forEach((link) => {
+  link.addEventListener("click", () => {
+    navLinks.classList.toggle("nav-open");
+    close.classList.toggle('nav-open');
+    
+  });
+});

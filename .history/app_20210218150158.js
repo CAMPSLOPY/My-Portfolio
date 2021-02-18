@@ -184,15 +184,7 @@ const close = document.getElementById("close");
 open.addEventListener("click", () => {
   showNav();
 });
-close.addEventListener("click", () => {
-  showNav();
-});
-links.forEach((link) => {
-  link.addEventListener("click", () => {
-    modalSection.classList.toggle("nav-open");
-    navLinks.classList.toggle("nav-open");
-  });
-});
+
 
 function showNav() {
   if (modalSection.style.display == "none") {
@@ -201,3 +193,11 @@ function showNav() {
     modalSection.style.display = "none";
   }
 }
+
+links.forEach((link) => {
+  link.addEventListener("click", () => {
+    modalSection.classList.toggle("nav-open");
+    navLinks.classList.toggle("nav-open");
+  });
+});
+

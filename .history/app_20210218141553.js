@@ -180,12 +180,12 @@ const navLinks = document.querySelector(".nav-links");
 const links = navLinks.querySelectorAll("a");
 const close = document.getElementById("close");
 // to open the mobile nav
-
+console.log(open);
 open.addEventListener("click", () => {
-  showNav();
+  modalSection.style.display = "flex";
 });
 close.addEventListener("click", () => {
-  showNav();
+  modalSection.style.display = "none";
 });
 links.forEach((link) => {
   link.addEventListener("click", () => {
@@ -193,11 +193,3 @@ links.forEach((link) => {
     navLinks.classList.toggle("nav-open");
   });
 });
-
-function showNav() {
-  if (modalSection.style.display == "none") {
-    modalSection.style.display = "flex";
-  } else {
-    modalSection.style.display = "none";
-  }
-}

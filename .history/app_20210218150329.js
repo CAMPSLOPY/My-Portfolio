@@ -185,7 +185,7 @@ open.addEventListener("click", () => {
   showNav();
 });
 close.addEventListener("click", () => {
-  showNav();
+  showNav()
 });
 links.forEach((link) => {
   link.addEventListener("click", () => {
