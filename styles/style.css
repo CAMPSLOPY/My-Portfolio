@@ -126,8 +126,8 @@ a {
 }
 
 .nav-open {
-  -webkit-transform: translateX(-100%);
-          transform: translateX(-100%);
+  -webkit-transform: translateX(100%);
+          transform: translateX(100%);
 }
 
 header {
@@ -358,84 +358,6 @@ nav a:hover {
   width: 85%;
   margin: 0 0 0 auto;
   margin-left: 200px;
-}
-
-#main-section .mobile-nav {
-  background-color: black;
-  color: white;
-  width: 100%;
-  margin: auto;
-  min-height: 100vh;
-  position: fixed;
-  top: 0;
-  left: 0;
-  z-index: 300;
-  display: none;
-}
-
-#main-section .mobile-nav .mobile-nav-content {
-  width: 50%;
-  margin: auto;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-  position: relative;
-}
-
-#main-section .mobile-nav .mobile-nav-content ul {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-pack: space-evenly;
-      -ms-flex-pack: space-evenly;
-          justify-content: space-evenly;
-  position: absolute;
-  top: 150px;
-}
-
-#main-section .mobile-nav .mobile-nav-content ul a {
-  padding: 2rem;
-  font-size: 2rem;
-}
-
-#main-section .mobile-nav .mobile-nav-content ul a span {
-  margin: 0 2rem;
-}
-
-#main-section .mobile-nav .mobile-nav-content ul a .contact-mobile {
-  position: absolute;
-  left: 50px;
-}
-
-#main-section .mobile-nav .mobile-nav-content ul a .home-mobile {
-  color: #AE2A76;
-}
-
-#main-section .mobile-nav .mobile-nav-content ul a .task-mobile {
-  color: #008cff;
-}
-
-#main-section .mobile-nav .mobile-nav-content ul a .badge-mobile {
-  color: #470347;
-}
-
-#main-section .mobile-nav .mobile-nav-content ul a .resume-mobile {
-  color: #3bd3e7;
-}
-
-#main-section .mobile-nav .mobile-nav-content button {
-  position: absolute;
-  -webkit-animation: slide-top .1s ease-in;
-          animation: slide-top .1s ease-in;
-  right: 10%;
-}
-
-#main-section .mobile-nav .mobile-nav-content button:hover {
-  color: #AE2A76;
 }
 
 .hero {
@@ -998,12 +920,75 @@ nav a:hover {
   top: 65%;
 }
 
-@media screen and (max-width: 900px) {
+@media screen and (max-width: 796px) {
   html {
     font-size: 65%;
   }
-  .mobile-nav {
-    display: block;
+  .mobile-nav-content {
+    width: 100%;
+    margin: auto;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    color: green;
+    -webkit-transition: -webkit-transform ease-in-out 1s;
+    transition: -webkit-transform ease-in-out 1s;
+    transition: transform ease-in-out 1s;
+    transition: transform ease-in-out 1s, -webkit-transform ease-in-out 1s;
+  }
+  .nav-links {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+    width: 100%;
+    height: 100%;
+    color: white;
+    top: 0;
+    left: 0%;
+    position: fixed;
+    z-index: 300;
+    background-color: black;
+    -webkit-transition: -webkit-transform ease-in-out 1s;
+    transition: -webkit-transform ease-in-out 1s;
+    transition: transform ease-in-out 1s;
+    transition: transform ease-in-out 1s, -webkit-transform ease-in-out 1s;
+  }
+  .nav-links a {
+    padding: 1rem 2rem;
+  }
+  .nav-links a span {
+    margin: 0 .2rem;
+  }
+  .contact-mobile {
+    position: absolute;
+    left: 10px;
+  }
+  .home-mobile {
+    color: #AE2A76;
+  }
+  .task-mobile {
+    color: #008cff;
+  }
+  .badge-mobile {
+    color: #470347;
+  }
+  .resume-mobile {
+    color: #3bd3e7;
+  }
+  button {
+    z-index: 300;
   }
   header {
     position: -webkit-sticky;
@@ -1052,6 +1037,9 @@ nav a:hover {
   #main-section {
     width: 100%;
     margin-left: 0;
+  }
+  .btn-scroll {
+    display: none;
   }
   .container {
     -ms-flex-preferred-size: 900px;

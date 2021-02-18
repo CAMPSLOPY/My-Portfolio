@@ -1,0 +1,192 @@
+$header1 : 2.5rem;
+$header2: 4rem;
+$header3: 2.5rem;
+$header4: 2rem;
+$text: 2.5rem;
+$background-color: #AE2A76;
+$background2: #000000;
+$gray-text: #2c2c2c;
+$line-text : #FF00D6;
+$textColor: #fff;
+
+@mixin flex($justify, $align, $direction) {
+    justify-content: $justify;
+    align-items: $align;
+    flex-direction: $direction;
+    display: flex;
+}
+@import 'global';
+@import 'sideNav';
+@import 'hero';
+@import 'portfolio';
+@import 'contact';
+
+
+@media screen and  ( max-width: 796px){
+   
+html{
+    font-size: 65%;
+ 
+}
+
+   
+    .mobile-nav-content{
+        width: 100%;
+        margin: auto;
+        min-height: 40vh;
+    //   flex-direction: column;
+    //   align-items: center;
+      justify-content: center;
+    display: flex;
+    color: green;
+    background-color: black;
+   
+    }
+        .nav-links{
+        //     text-align: center;
+        //     align-items: center;
+        //     flex-direction: column;
+        // //    position: fixed;
+        // //    background-color: black;
+        // //    z-index: 200;
+        //    height: 100%;
+        //    width: 100%;
+        //    top: 0;
+        // //    left: 0;
+        // //    transition: transform ease-in-out 1s;
+        display: flex;
+        flex-direction: ;
+        }
+          
+           
+          .nav-links a{
+            padding: 1rem;
+            font-size: 1rem;
+          }
+          .nav-links a  span{
+                margin: 0 .2rem;
+                
+            }
+            .contact-mobile{
+                position: absolute;
+                left: 10px;
+                
+            }
+            
+            .home-mobile{
+                color: $background-color;
+            }
+            .task-mobile{
+                color: rgb(0, 140, 255);
+            }
+            .badge-mobile{
+                color: rgb(71, 3, 71);
+            }
+            .resume-mobile{
+                color: rgb(59, 211, 231);
+            }
+           
+        
+         button{
+            z-index: 300;
+            
+        }
+    
+    header{
+        position: sticky;
+        width: 100%;
+        min-height: 10vh;
+        display: flex;
+        justify-content: space-around;
+       align-items: center;
+
+        .name{
+            border-bottom: none;
+            padding: 0px;
+            display: flex;
+            align-items: flex-start;
+
+            h3{
+                font-size: 3rem;
+                margin-left: 2rem;
+                color: black;
+            }
+            p{
+                display: none;
+            }
+        }
+        nav{
+            display:none;
+        }
+       
+        #socials{
+            display: none;
+        }
+    }
+    .nav-section{
+        h1{
+            display: flex;
+            color: green;
+        }
+    }
+    #main-section{
+        width: 100%;
+        margin-left: 0;
+        
+    }
+    .btn-scroll{
+        display: none;
+    }
+    .container{
+        flex-basis: 900px;
+
+        .screen{
+            background-color: white;
+        }
+    }
+    .screen-body{
+       display: flex;
+       flex-direction: column;
+    }
+    .overlay-body{
+        display: none;
+    }
+    .hero{
+        background-color: black;
+        
+        .hero-image{
+            background-color: #d8dbe2;
+            display: none;
+            p{
+                color: white;
+            }
+            img{
+                display: none;
+            }
+        }
+    }
+    #contact{
+        background-color: white;
+    }
+  .hero-text{
+   display: none;
+   z-index: -3;
+     h1{
+         display: none;
+     }
+     h2{
+         display: none;
+     }
+  }
+
+  .hero-image{
+      left: 10%;
+
+      p{
+        font-size: 1rem;
+    }
+  }
+
+}
+
+
