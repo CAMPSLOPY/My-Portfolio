@@ -188,7 +188,11 @@ close.addEventListener("click", () => {
   showNav();
 });
 
-
+links.forEach((link) => {
+  link.addEventListener("click", () => {
+    navLinks.classList.toggle("nav-open");
+  });
+});
 
 function showNav() {
   if (modalSection.style.display == "none") {

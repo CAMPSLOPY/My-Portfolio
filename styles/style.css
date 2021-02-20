@@ -966,8 +966,13 @@ nav a:hover {
     position: fixed;
     top: 0;
     left: 0;
-    background-color: gray;
+    background-color: black;
     z-index: 300;
+    border: 1px solid #fff;
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+    -webkit-box-shadow: 11px 2px 2px rgba(8, 8, 8, 0.158);
+            box-shadow: 11px 2px 2px rgba(8, 8, 8, 0.158);
   }
   .nav-links {
     display: -webkit-box;
@@ -1044,7 +1049,7 @@ nav a:hover {
             align-items: flex-start;
   }
   header .name h3 {
-    font-size: 3rem;
+    font-size: 1.5rem;
     margin-left: 2rem;
     color: black;
   }
@@ -1102,9 +1107,14 @@ nav a:hover {
     color: whitesmoke;
   }
   .hero .heading h2 {
-    background-color: black;
+    background-color: #000;
     overflow: hidden;
-    font-weight: lighter;
+    font-weight: bolder;
+  }
+  .hero .heading h2 span {
+    display: inline-block;
+    -webkit-transform: translateY(100%);
+            transform: translateY(100%);
   }
   .hero .hero-text {
     display: none;

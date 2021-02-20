@@ -111,7 +111,7 @@ html{
             align-items: flex-start;
 
             h3{
-                font-size: 1.5rem;
+                font-size: 3rem;
                 margin-left: 2rem;
                 color: black;
             }
@@ -162,14 +162,9 @@ html{
         .heading{
             color: whitesmoke;
             h2{
-                background-color: #000;
+                background-color: black;
                 overflow: hidden;
-                font-weight: bolder;
-                
-                span{
-                    display: inline-block;
-                    transform: translateY(100%)
-                }
+                font-weight: lighter;
             }
         }
         .hero-text{

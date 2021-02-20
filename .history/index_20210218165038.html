@@ -32,12 +32,7 @@
       href="https://fonts.googleapis.com/css2?family=Pangolin&display=swap"
       rel="stylesheet"
     />
-    <!-- GSAP -->
-    <script
-      src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.6.0/gsap.min.js"
-      integrity="sha512-1dalHDkG9EtcOmCnoCjiwQ/HEB5SDNqw8d4G2MKoNwjiwMNeBAkudsBCmSlMnXdsH8Bm0mOd3tl/6nL5y0bMaQ=="
-      crossorigin="anonymous"
-    ></script>
+    <!--  -->
     <!-- font awesome -->
     <script
       defer
@@ -58,7 +53,7 @@
   <body>
     <header>
       <div class="name">
-        <h3 class="">Tola Shobowale</h3>
+        <h3>Tola Shobowale</h3>
         <p>Software Developer</p>
       </div>
       <nav>
@@ -83,7 +78,7 @@
         </ul>
       </nav>
       <button id="open" class="lg:hidden">
-        <i class="fas fa-bars text-4xl relative mr-10"></i>
+        <i class="fas fa-bars text-6xl relative mr-10"></i>
       </button>
       <div id="socials">
         <span class="nav-socials twitter">
@@ -132,7 +127,11 @@
           <button id="close" class="">
             <i class="fas fa-times text-6xl top-11 absolute right-11"></i>
           </button>
-       
+          <!-- <div class="burger">
+            <span class="line1"></span>
+            <span class="line2"></span>
+            <span class="line3"></span>
+          </div> -->
         </div>
       </div>
       <!--mobile nav end-->
@@ -159,19 +158,19 @@
           </div>
         </div>
         <!-- mobile hero -->
-
-        <div id="heading" class="heading md:hidden">
-          <h2>
-            <span id="create" class="text-4xl tracking-widest">WELCOME TO MY PORTFOLIO</span>
-          </h2>
-          <h2>
-            <span id="create" class="text-4xl tracking-widest">FRONT-END DEVELOPER</span>
-          </h2>
-          <h2>
-            <span id="create" class="text-4xl tracking-widest">GLAD TO HAVE YOU HERE 👍 </span>
-          </h2>
-        </div>
-
+        
+          <div id="heading" class="heading md:hidden">
+            <h2 id="create">
+              <span class="text-4xl">WELCOME TO MY PORTFOLIO</span>
+            </h2>
+            <h2 id="create">
+              <span class="text-4xl">FRONT-END DEVELOPER</span>
+            </h2>
+            <h2 id="create">
+              <span class="text-4xl">GLAD TO HAVE YOU  HERE 👍 </span>
+            </h2>
+          </div>
+        
         <!-- mobile hero end -->
       </section>
 
@@ -334,7 +333,11 @@
       crossorigin="anonymous"
     ></script>
     <!-- gsap -->
-  
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.1.3/TweenMax.min.js"
+      integrity="sha256-lPE3wjN2a7ABWHbGz7+MKBJaykyzqCbU96BJWjio86U="
+      crossorigin="anonymous"
+    ></script>
     <!-- THREE JS -->
     <script
       src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r118/three.js"

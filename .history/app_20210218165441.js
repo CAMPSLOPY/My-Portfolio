@@ -188,7 +188,11 @@ close.addEventListener("click", () => {
   showNav();
 });
 
-
+links.forEach((link) => {
+  link.addEventListener("click", () => {
+    navLinks.classList.toggle("nav-open");
+  });
+});
 
 function showNav() {
   if (modalSection.style.display == "none") {
@@ -200,5 +204,3 @@ function showNav() {
 
 // using GSAP Animation for part of the mobile view
 
-let tl = gsap.timeline({ defaults: { ease: "SlowMo.easeOut" } });
-tl.to("#create", { y: "0%", duration: 0.7, stagger: 0.8, delay: 1 });
