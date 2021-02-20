@@ -1,5 +1,5 @@
 header {
-    width: 20px;
+    width: 200px;
     height: 100%;
     background: #d8dbe2;
     position: fixed;
@@ -9,7 +9,6 @@ header {
         0px 20px 40px rgba($color: #000000, $alpha: 0.2);
     z-index: 100;
     overflow-x: hidden;
-
 
 }
 
@@ -24,6 +23,7 @@ header {
         font-family: 'Raleway', sans-serif;
         color: #ceb40a;
         font-weight: bold;
+        font-size: 2rem;
     }
 
     p {
