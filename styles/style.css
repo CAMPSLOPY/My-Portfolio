@@ -5,6 +5,11 @@
           box-sizing: border-box;
 }
 
+:root {
+  --success-color: #2ecc71;
+  --error-color: #e74c3c;
+}
+
 body {
   font-family: 'Montserrat', sans-serif;
   background-repeat: no-repeat;
@@ -756,6 +761,7 @@ nav a:hover {
           flex: 0 1 700px;
   padding: 10px;
   margin: auto;
+  position: relative;
 }
 
 .screen {
@@ -844,9 +850,11 @@ nav a:hover {
 
 .screen .screen-body .screen-body-item .app-form-group {
   margin-bottom: 15px;
+  position: relative;
 }
 
 .screen .screen-body .screen-body-item .app-form-group .app-form-control {
+  position: relative;
   width: 100%;
   padding: 10px 0;
   background-color: transparent;
@@ -949,6 +957,43 @@ nav a:hover {
   color: black;
   position: relative;
   top: 65%;
+}
+
+.app-form-group small {
+  margin-bottom: 2rem;
+  font-size: 1.4rem;
+  color: var(--error-color);
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande", "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+}
+
+.app-form-group.error .app-form-control {
+  border-bottom-color: var(--error-color);
+}
+
+.app-form-group.success .app-form-control {
+  border-bottom-color: var(--success);
+}
+
+.app-form-group .fa-exclamation-circle {
+  visibility: hidden;
+  position: absolute;
+  top: 15px;
+  right: 10px;
+  -webkit-transition: .3s ease-in;
+  transition: .3s ease-in;
+  font-size: 2rem;
+  color: var(--error-color);
+}
+
+.app-form-group .fa-check-circle {
+  visibility: hidden;
+  position: absolute;
+  top: 15px;
+  right: 10px;
+  -webkit-transition: .3s ease-in;
+  transition: .3s ease-in;
+  font-size: 3rem;
+  color: var(--error-color);
 }
 
 @media screen and (max-width: 796px) {

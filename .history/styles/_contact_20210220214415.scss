@@ -202,9 +202,9 @@ border-bottom-color: var(--error-color);
      border-bottom-color: var(--success);
  }
  .app-form-group .fa-exclamation-circle{
-    visibility: hidden;
+  
     position: absolute;
-    top: 15px;
+    top: 5px;
     right: 10px;
     transition: .3s ease-in;
     font-size: 2rem;
@@ -213,7 +213,7 @@ border-bottom-color: var(--error-color);
  .app-form-group .fa-check-circle{
   visibility: hidden;
     position: absolute;
-    top: 15px;
+    top: 20px;
     right: 10px;
     transition: .3s ease-in;
     font-size: 3rem;

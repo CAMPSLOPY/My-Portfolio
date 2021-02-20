@@ -24,7 +24,6 @@
     flex: 0 1 700px;
     padding: 10px;
     margin: auto;
-    position: relative;
     
 }
 
@@ -103,8 +102,6 @@
 
             .app-form-group{
                 margin-bottom: 15px;
-                position: relative;
-                // padding-bottom: 20px;
                 .app-form-control{
                     position: relative;
                     width: 100%;
@@ -124,7 +121,15 @@
                         border-bottom-color: #ceb40a;
                     }
                 }
-              
+                small{
+                    position: absolute;
+                    bottom: 0;
+                    left: 0;
+                    // visibility: hidden;
+                    color: var(--error-color);
+                    font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+                      "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+                }
             }
             .message{
                 margin-top: 40px;
@@ -184,38 +189,4 @@
         top: 65%;
 
     }
-}
-
-.app-form-group small{
-   
-   margin-bottom: 2rem;
-  font-size: 1.4rem;
-    color: var(--error-color);
-    font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
-      "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
-}
-
-.app-form-group.error .app-form-control{
-border-bottom-color: var(--error-color);
-}
- .app-form-group.success .app-form-control{
-     border-bottom-color: var(--success);
- }
- .app-form-group .fa-exclamation-circle{
-    visibility: hidden;
-    position: absolute;
-    top: 15px;
-    right: 10px;
-    transition: .3s ease-in;
-    font-size: 2rem;
-    color:var(--error-color);
-}
- .app-form-group .fa-check-circle{
-  visibility: hidden;
-    position: absolute;
-    top: 15px;
-    right: 10px;
-    transition: .3s ease-in;
-    font-size: 3rem;
-    color:var(--error-color);
 }
