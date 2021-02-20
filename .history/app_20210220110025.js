@@ -196,11 +196,7 @@ function showNav() {
   }
 }
 
-links.forEach((link) => {
-  link.addEventListener("click", () => {
-    modalSection.style.display = "none";
-  });
-});
+
 
 // using GSAP Animation for part of the mobile view
 

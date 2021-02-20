@@ -176,9 +176,8 @@ sideContact.addEventListener("click", () => {
 
 const open = document.getElementById("open");
 const modalSection = document.getElementById("mobile-nav-content");
-const navLinks = document.querySelector(".nav-links");
+const navLinks = document.querySelector(".nav-links")
 const close = document.getElementById("close");
-const links = document.querySelectorAll(".link");
 // to open the mobile nav
 
 open.addEventListener("click", () => {
@@ -188,6 +187,8 @@ close.addEventListener("click", () => {
   showNav();
 });
 
+
+
 function showNav() {
   if (modalSection.style.display == "none") {
     modalSection.style.display = "flex";
@@ -195,12 +196,6 @@ function showNav() {
     modalSection.style.display = "none";
   }
 }
-
-links.forEach((link) => {
-  link.addEventListener("click", () => {
-    modalSection.style.display = "none";
-  });
-});
 
 // using GSAP Animation for part of the mobile view
 
