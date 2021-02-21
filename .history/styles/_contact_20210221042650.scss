@@ -226,8 +226,8 @@ border-bottom-color: var(--error-color);
     border-bottom: 1px solid #f0f0f0;
     font-size: 14px;
     outline: none;
+    border: n;
     transition: border-color 1.2s;
-    background-color: transparent;
     &::placeholder{
         color: #666;
         font-size: 10px;

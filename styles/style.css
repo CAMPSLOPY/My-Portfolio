@@ -956,11 +956,11 @@ nav a:hover {
 }
 
 .app-form-group.error input {
-  border-color: var(--error-color);
+  border-bottom-color: var(--error-color);
 }
 
 .app-form-group.success input {
-  border-color: var(--success-color);
+  border-bottom-color: var(--success-color);
 }
 
 .app-form-group .fa-check-circle {
@@ -1007,10 +1007,12 @@ nav a:hover {
   width: 100%;
   padding: 10px 10px;
   color: black;
-  border: 2px solid #f0f0f0;
+  border-bottom: 1px solid #f0f0f0;
   font-size: 14px;
+  outline: none;
   -webkit-transition: border-color 1.2s;
   transition: border-color 1.2s;
+  background-color: transparent;
 }
 
 .app-form-group input::-webkit-input-placeholder {
