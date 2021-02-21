@@ -267,7 +267,7 @@ function checkLength(input, min, max) {
   if (input.value.length < min) {
     showError(input, `${input.name} must be atleast ${min} characters`);
   } else if (input.value.length > max) {
-    showError(input, `${input.name} must be atleast ${max} characters`);
+    showError(input, `${input.name} must be atleast ${max}`);
   } else {
     showSuccess(input);
   }
