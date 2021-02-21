@@ -238,7 +238,6 @@ form.addEventListener("submit", function (e) {
   }
   validateEmail(email);
   validateNumber(number);
-  checkLength(username,2,40);
 });
 
 // Email checker>>>
@@ -263,12 +262,6 @@ function validateNumber(num) {
 
 // check lENGTH for userName
 
-function checkLength(input, min, max) {
-  if (input.value.length < min) {
-    showError(input, `${input.name} must be atleast ${min}`);
-  } else if (input.value.length > max) {
-    showError(input, `${input.name} must be atleast ${max}`);
-  } else {
-    showSuccess(input);
-  }
+function checkLength (input,min,max){
+
 }

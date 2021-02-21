@@ -238,7 +238,7 @@ form.addEventListener("submit", function (e) {
   }
   validateEmail(email);
   validateNumber(number);
-  checkLength(username,2,40);
+  checkLength(username,2,25);
 });
 
 // Email checker>>>
