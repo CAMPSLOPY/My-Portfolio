@@ -1,0 +1,235 @@
+#contact {
+    min-height: 100vh;
+    background: #D8DBE2;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    display: flex;
+    overflow: hidden;
+
+    button,
+    input {
+        font-family: 'Montserrat', sans-serif;
+        font-weight: 700;
+        letter-spacing: 1.4px;
+        font-size: 2rem;
+    }
+
+    button {
+        cursor: pointer;
+    }
+}
+
+.container {
+    flex: 0 1 700px;
+    padding: 10px;
+    margin: auto;
+    position: relative;
+    
+}
+
+.screen {
+    position: relative;
+    background-color: #D8DBE2;
+    border-radius: 15px;
+    box-shadow:0 1px 4px rgba(0, 0, 0, 0.3), 0 0 40px rgba(0, 0, 0, 0.1);
+
+    &::after {
+        display: block;
+        content: "";
+        z-index: -1;
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        left: 20px;
+        right: 20px;
+        border-radius: 15px;
+        box-shadow: 0 20px 40px rgba(0, 0, 0, 0.4);
+    }
+
+
+    .screen-header {
+        display: flex;
+        padding: 10px 20px;
+        background-color: #4d4d4f;
+        border-top-left-radius: 15px;
+        border-top-right-radius: 15px;
+
+        .screen-header-left {
+            margin-right: auto;
+
+            .screen-header-button {
+                display: inline-block;
+                width: 8px;
+                height: 8px;
+                margin-right: 3px;
+                border-radius: 8px;
+                background-color: #fff;
+            }
+
+            .close {
+                background-color: #ed1c6f;
+            }
+
+            .maximize {
+                background-color: #e8e925;
+            }
+
+            .minimize {
+                background-color: #74c54f;
+            }
+        }
+
+        .screen-header-right {
+            display: flex;
+
+            .screen-header-ellipsis {
+                width: 3px;
+                height: 3px;
+                margin-left: 2px;
+                border-radius: 8px;
+                background-color: #999;
+            }
+        }
+    }
+
+    .screen-body {
+        display: flex;
+
+        .screen-body-item {
+            flex: 1;
+            padding: 10px;
+            
+
+           
+            .message{
+                margin-top: 40px;
+            }
+            .buttons{
+                margin: 0;
+                text-align: right;
+
+                .app-form-button{
+                    background-color: transparent;
+                    border: none;
+                    color: #ceb40a;
+                    font-size: 14px;
+                    outline: none;
+                    margin: 12px;
+                    
+                    &:hover{
+                        color: black;
+                        transition: all .3s ease-in;
+                    }
+                }
+            }
+        }
+    }
+}
+
+.left {
+    flex: 1;
+    flex-direction: column;
+
+    .app-title {
+        display: flex;
+        flex: 1;
+        flex-direction: column;
+        position: relative;
+        color: #ceb40a;
+        font-size: 26px;
+        font-weight: 500;
+
+        &::after {
+            display: block;
+            content: "";
+            position: absolute;
+            left: 0;
+            bottom: -10px;
+            width: 25px;
+            height: 4px;
+            background-color: black;
+        }
+    }
+    .app-contact{
+        margin-top: 2em;
+        font-size: 11px;
+        font-weight: bold;
+        color: black;
+        position: relative;
+        top: 65%;
+
+    }
+}
+
+.app-form-group small{
+   visibility: hidden;
+    padding: 2rem 0rem;
+    margin-bottom: 2rem;
+    font-size: 1.4rem;
+    color: var(--error-color);
+    top: 29px;
+    left: 0;
+    position: absolute;
+}
+
+.app-form-group.error small{
+    visibility: visible;
+}
+.app-form-group.error input{
+border-color: red;
+}
+ .app-form-group.success input{
+     border-color: green;
+ }
+ .app-form-group .fa-check-circle{
+    visibility: hidden;
+    position: absolute;
+    top: 15px;
+    right: 10px;
+    transition: .3s ease-in;
+    font-size: 2rem;
+    
+}
+ .app-form-group .fa-exclamation-circle{
+  visibility: hidden;
+    position: absolute;
+    top: 15px;
+    right: 10px;
+    transition: .3s ease-in;
+    font-size: 2rem;
+   
+}
+
+.app-form-group.success .fa-check-circle{
+    color: green;
+    visibility: visible;
+}
+.app-form-group.error .fa-exclamation-circle{
+    color:red;
+    visibility: visible;
+}
+
+.app-form-group{
+    margin-bottom: 15px;
+    position: relative;
+    animation: modalopen;
+    animation-duration: 1s; 
+}
+
+ .app-form-group input{
+    position: relative;
+    width: 100%;
+    padding: 10px 10px;
+    color: black;
+    border: 2px solid #f0f0f0;
+    font-size: 10rem;
+    transition: border-color 1.2s;
+    &::placeholder{
+        color: #666;
+    }
+    &:focus{
+        border-color: #ceb40a;
+    }
+}
+

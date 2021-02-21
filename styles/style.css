@@ -130,9 +130,31 @@ a {
   overflow: hidden;
 }
 
-.nav-open {
-  -webkit-transform: translateX(100%);
-          transform: translateX(100%);
+input[type="submit"] {
+  border: 0;
+  border-radius: 5px;
+  padding: 8px 12px;
+  color: white;
+  cursor: pointer;
+  background-color: black;
+}
+
+@-webkit-keyframes modalopen {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes modalopen {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
 }
 
 @-webkit-keyframes jello-horizontal {
@@ -848,46 +870,6 @@ nav a:hover {
   padding: 10px;
 }
 
-.screen .screen-body .screen-body-item .app-form-group {
-  margin-bottom: 15px;
-  position: relative;
-}
-
-.screen .screen-body .screen-body-item .app-form-group .app-form-control {
-  position: relative;
-  width: 100%;
-  padding: 10px 0;
-  background-color: transparent;
-  border: none;
-  color: black;
-  border-bottom: 1px solid #666;
-  font-size: 14px;
-  text-transform: capitalize;
-  outline: none;
-  -webkit-transition: border-color 1.2s;
-  transition: border-color 1.2s;
-}
-
-.screen .screen-body .screen-body-item .app-form-group .app-form-control::-webkit-input-placeholder {
-  color: #666;
-}
-
-.screen .screen-body .screen-body-item .app-form-group .app-form-control:-ms-input-placeholder {
-  color: #666;
-}
-
-.screen .screen-body .screen-body-item .app-form-group .app-form-control::-ms-input-placeholder {
-  color: #666;
-}
-
-.screen .screen-body .screen-body-item .app-form-group .app-form-control::placeholder {
-  color: #666;
-}
-
-.screen .screen-body .screen-body-item .app-form-group .app-form-control:focus {
-  border-bottom-color: #ceb40a;
-}
-
 .screen .screen-body .screen-body-item .message {
   margin-top: 40px;
 }
@@ -960,18 +942,35 @@ nav a:hover {
 }
 
 .app-form-group small {
-  margin-bottom: 2rem;
+  visibility: hidden;
+  margin: 2rem 0rem;
   font-size: 1.4rem;
   color: var(--error-color);
-  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande", "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+  top: 0;
+  left: 20%;
+  position: relative;
 }
 
-.app-form-group.error .app-form-control {
-  border-bottom-color: var(--error-color);
+.app-form-group.error small {
+  visibility: visible;
 }
 
-.app-form-group.success .app-form-control {
-  border-bottom-color: var(--success);
+.app-form-group.error input {
+  border-color: red;
+}
+
+.app-form-group.success input {
+  border-color: green;
+}
+
+.app-form-group .fa-check-circle {
+  visibility: hidden;
+  position: absolute;
+  top: 15px;
+  right: 10px;
+  -webkit-transition: .3s ease-in;
+  transition: .3s ease-in;
+  font-size: 2rem;
 }
 
 .app-form-group .fa-exclamation-circle {
@@ -982,18 +981,85 @@ nav a:hover {
   -webkit-transition: .3s ease-in;
   transition: .3s ease-in;
   font-size: 2rem;
-  color: var(--error-color);
 }
 
-.app-form-group .fa-check-circle {
-  visibility: hidden;
-  position: absolute;
-  top: 15px;
-  right: 10px;
-  -webkit-transition: .3s ease-in;
-  transition: .3s ease-in;
-  font-size: 3rem;
-  color: var(--error-color);
+.app-form-group textarea {
+  resize: none;
+  padding: 10px 20px;
+}
+
+.app-form-group textarea::-webkit-input-placeholder {
+  font-size: 15px;
+  color: rgba(0, 0, 0, 0.452);
+}
+
+.app-form-group textarea:-ms-input-placeholder {
+  font-size: 15px;
+  color: rgba(0, 0, 0, 0.452);
+}
+
+.app-form-group textarea::-ms-input-placeholder {
+  font-size: 15px;
+  color: rgba(0, 0, 0, 0.452);
+}
+
+.app-form-group textarea::placeholder {
+  font-size: 15px;
+  color: rgba(0, 0, 0, 0.452);
+}
+
+.app-form-group.success .fa-check-circle {
+  color: green;
+  visibility: visible;
+}
+
+.app-form-group.error .fa-exclamation-circle {
+  color: red;
+  visibility: visible;
+}
+
+.app-form-group {
+  margin-bottom: 15px;
+  position: relative;
+  -webkit-animation: modalopen;
+          animation: modalopen;
+  -webkit-animation-duration: 1s;
+          animation-duration: 1s;
+}
+
+.app-form-group input {
+  position: relative;
+  width: 100%;
+  padding: 10px 10px;
+  color: black;
+  border: 2px solid #f0f0f0;
+  font-size: 14px;
+  -webkit-transition: border-color 1.2s;
+  transition: border-color 1.2s;
+}
+
+.app-form-group input::-webkit-input-placeholder {
+  color: #666;
+  font-size: 10px;
+}
+
+.app-form-group input:-ms-input-placeholder {
+  color: #666;
+  font-size: 10px;
+}
+
+.app-form-group input::-ms-input-placeholder {
+  color: #666;
+  font-size: 10px;
+}
+
+.app-form-group input::placeholder {
+  color: #666;
+  font-size: 10px;
+}
+
+.app-form-group input:focus {
+  border-color: #ceb40a;
 }
 
 @media screen and (max-width: 796px) {
