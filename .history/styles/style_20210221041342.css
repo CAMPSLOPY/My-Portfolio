@@ -960,7 +960,7 @@ nav a:hover {
 }
 
 .app-form-group.success input {
-  border-color: var(--success-color);
+  border-color: green;
 }
 
 .app-form-group .fa-check-circle {
@@ -984,12 +984,12 @@ nav a:hover {
 }
 
 .app-form-group.success .fa-check-circle {
-  color: var(--success-color);
+  color: green;
   visibility: visible;
 }
 
 .app-form-group.error .fa-exclamation-circle {
-  color: var(--error-color);
+  color: red;
   visibility: visible;
 }
 

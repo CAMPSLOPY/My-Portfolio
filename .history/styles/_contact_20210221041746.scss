@@ -179,7 +179,7 @@
 border-color: var(--error-color);
 }
  .app-form-group.success input{
-     border-color: var(--success-color);
+     border-color: green;
  }
  .app-form-group .fa-check-circle{
     visibility: hidden;
@@ -202,7 +202,7 @@ border-color: var(--error-color);
 
 
 .app-form-group.success .fa-check-circle{
-    color: var(--success-color);
+    color: var(--);
     visibility: visible;
 
 }
