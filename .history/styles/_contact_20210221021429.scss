@@ -200,15 +200,16 @@ border-color: red;
    
 }
 
-// .app-form-group textarea{
-//     resize: none;
-//     padding: 10px 15px;
-//     &::placeholder{
-//         font-size: 15px;
-//         color: rgba(0, 0, 0, 0.452);
-//     }
+.app-form-group textarea{
+    resize: none;
+    
+    padding: 3px 20px;
+    &::placeholder{
+        font-size: 15px;
+        color: rgba(0, 0, 0, 0.452);
+    }
    
-// }
+}
 
 .app-form-group.success .fa-check-circle{
     color: green;

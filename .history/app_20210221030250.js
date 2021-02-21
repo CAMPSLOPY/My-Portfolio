@@ -237,25 +237,14 @@ form.addEventListener("submit", function (e) {
     showSuccess(username);
   }
   validateEmail(email);
-  validateNumber(number);
 });
 
-// Email checker>>>
+// 
 function validateEmail(input) {
   const re = /^(([^<>()\[\]\\.,;:\s@"]+(\.[^<>()\[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
   if (re.test(input.value.trim())) {
     showSuccess(input);
   } else {
     showError(input, "Email is not valid");
-  }
-}
-
-// to validate number
-function validateNumber(num) {
-  const numStr = /^-?(\d+\.?\d*)$|(\d*\.?\d+)$/;
-  if (numStr.test(num.value.toString())) {
-    showSuccess(num);
-  } else {
-    showError(num, "Number is not valid");
   }
 }

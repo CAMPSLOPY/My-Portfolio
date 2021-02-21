@@ -237,7 +237,7 @@ form.addEventListener("submit", function (e) {
     showSuccess(username);
   }
   validateEmail(email);
-  validateNumber(number);
+  validateNumber(number)
 });
 
 // Email checker>>>
@@ -251,11 +251,7 @@ function validateEmail(input) {
 }
 
 // to validate number
-function validateNumber(num) {
+function validateNumber( num ) {
   const numStr = /^-?(\d+\.?\d*)$|(\d*\.?\d+)$/;
-  if (numStr.test(num.value.toString())) {
-    showSuccess(num);
-  } else {
-    showError(num, "Number is not valid");
-  }
+  if numStr.test( num.toString() );
 }

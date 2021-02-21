@@ -253,7 +253,7 @@ function validateEmail(input) {
 // to validate number
 function validateNumber(num) {
   const numStr = /^-?(\d+\.?\d*)$|(\d*\.?\d+)$/;
-  if (numStr.test(num.value.toString())) {
+  if (numStr.test(num.value.to())) {
     showSuccess(num);
   } else {
     showError(num, "Number is not valid");

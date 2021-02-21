@@ -983,31 +983,6 @@ nav a:hover {
   font-size: 2rem;
 }
 
-.app-form-group textarea {
-  resize: none;
-  padding: 10px 20px;
-}
-
-.app-form-group textarea::-webkit-input-placeholder {
-  font-size: 15px;
-  color: rgba(0, 0, 0, 0.452);
-}
-
-.app-form-group textarea:-ms-input-placeholder {
-  font-size: 15px;
-  color: rgba(0, 0, 0, 0.452);
-}
-
-.app-form-group textarea::-ms-input-placeholder {
-  font-size: 15px;
-  color: rgba(0, 0, 0, 0.452);
-}
-
-.app-form-group textarea::placeholder {
-  font-size: 15px;
-  color: rgba(0, 0, 0, 0.452);
-}
-
 .app-form-group.success .fa-check-circle {
   color: green;
   visibility: visible;
