@@ -273,4 +273,6 @@ function checkLength(input, min, max) {
   }
 }
 
-
+AOS.init({
+  duration: 1200,
+});
