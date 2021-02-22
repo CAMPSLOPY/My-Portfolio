@@ -112,16 +112,7 @@ document.addEventListener("DOMContentLoaded", () => {
     },
     opacity: [0, 1],
   });
-  anime({
-    targets: ".container",
-    translateX: [-100, 0],
-    easing: "easeInOutQuad",
-    duration: 500,
-    opacity: [0, 1],
-    delay: (el, i) => {
-      return 500 + 100 * i;
-    },
-  });
+  
 });
 
 const sidePortfolio = document.querySelector("#side-portfolio");

@@ -114,7 +114,7 @@ document.addEventListener("DOMContentLoaded", () => {
   });
   anime({
     targets: ".container",
-    translateX: [-100, 0],
+    translateX: [-40, 0],
     easing: "easeInOutQuad",
     duration: 500,
     opacity: [0, 1],

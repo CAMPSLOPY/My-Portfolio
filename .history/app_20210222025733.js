@@ -112,21 +112,14 @@ document.addEventListener("DOMContentLoaded", () => {
     },
     opacity: [0, 1],
   });
-  anime({
-    targets: ".container",
-    translateX: [-100, 0],
-    easing: "easeInOutQuad",
-    duration: 500,
-    opacity: [0, 1],
-    delay: (el, i) => {
-      return 500 + 100 * i;
-    },
-  });
 });
 
 const sidePortfolio = document.querySelector("#side-portfolio");
 const sideContact = document.querySelector("#side-contact");
 const btn = document.querySelector("button");
+
+
+btn.addEventListener("mouseover", updateSpan);
 
 sidePortfolio.addEventListener("click", (e) => {
   TweenMax.to(".first", 1.9, {
@@ -163,13 +156,14 @@ sideContact.addEventListener("click", () => {
   // OVERLAY
   anime({
     targets: ".container",
-    translateX: [-40, 0],
+    translateX: [-350, 0],
     easing: "easeInOutQuad",
-    duration: 500,
+    duration: 100,
     opacity: [0, 1],
     delay: (el, i) => {
       return 500 + 100 * i;
     },
+    
   });
 });
 
@@ -273,3 +267,5 @@ function checkLength(input, min, max) {
     showSuccess(input);
   }
 }
+
+
