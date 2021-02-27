@@ -686,6 +686,7 @@ nav a:hover {
 #portfolio #cards .card h5 {
   font-size: 1.5rem;
   padding: 1.5rem 0rem;
+  text-transform: uppercase;
 }
 
 #portfolio #cards .card h3 {
