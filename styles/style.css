@@ -729,7 +729,7 @@ nav a:hover {
 }
 
 #portfolio #cards .card .site-card h6:hover {
-  color: #ceb40a;
+  color: rgba(0, 0, 0, 0.411);
 }
 
 #portfolio #cards .card .site-card h6:focus {
