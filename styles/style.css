@@ -455,7 +455,7 @@ nav a:hover {
 }
 
 .nav-socials .fa-twitter {
-  color: #b9c3ca;
+  color: rgba(0, 153, 255, 0.959);
 }
 
 .nav-socials .fa-twitter:hover {
