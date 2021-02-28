@@ -147,7 +147,7 @@
             left: 0;
             bottom: -0.625rem;
             width: 1.5625rem;
-            height: 0.25rem;
+            height: 0.25rem
             background-color: black;
         }
     }
@@ -192,8 +192,8 @@ border-bottom-color: var(--error-color);
  .app-form-group .fa-exclamation-circle{
   visibility: hidden;
     position: absolute;
-    top: 0.9375rem;
-    right: 0.625rem;
+    top: 15px;
+    right: 10px;
     transition: .3s ease-in;
     font-size: 2rem;
 }
@@ -210,7 +210,7 @@ border-bottom-color: var(--error-color);
 }
 
 .app-form-group{
-    margin-bottom: 0.9375rem;
+    margin-bottom: 15px;
     position: relative;
     animation: modalopen;
     animation-duration: 1s; 
@@ -219,16 +219,16 @@ border-bottom-color: var(--error-color);
  .app-form-group input{
     position: relative;
     width: 100%;
-    padding: 0.625rem 0.625rem;
+    padding: 10px 10px;
     color: black;
     border-bottom: 1px solid #f0f0f0;
-    font-size: 0.875rem;
+    font-size: 14px;
     outline: none;
     transition: border-color 1.2s;
     background-color: transparent;
     &::placeholder{
         color: #666;
-        font-size: 0.625rem;
+        font-size: 10px;
     }
     &:focus{
         border-color: #ceb40a;

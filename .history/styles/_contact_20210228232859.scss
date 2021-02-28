@@ -228,7 +228,7 @@ border-bottom-color: var(--error-color);
     background-color: transparent;
     &::placeholder{
         color: #666;
-        font-size: 0.625rem;
+        font-size: 10px;
     }
     &:focus{
         border-color: #ceb40a;

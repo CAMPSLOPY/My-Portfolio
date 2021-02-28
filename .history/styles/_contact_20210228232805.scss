@@ -219,16 +219,16 @@ border-bottom-color: var(--error-color);
  .app-form-group input{
     position: relative;
     width: 100%;
-    padding: 0.625rem 0.625rem;
+    padding: 10px 10px;
     color: black;
     border-bottom: 1px solid #f0f0f0;
-    font-size: 0.875rem;
+    font-size: 14px;
     outline: none;
     transition: border-color 1.2s;
     background-color: transparent;
     &::placeholder{
         color: #666;
-        font-size: 0.625rem;
+        font-size: 10px;
     }
     &:focus{
         border-color: #ceb40a;
