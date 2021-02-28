@@ -188,6 +188,86 @@ input[type="submit"] {
   }
 }
 
+.footer-socials {
+  min-height: 20vh;
+  width: 100%;
+  background-color: black;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  position: -webkit-sticky;
+  position: sticky;
+  bottom: 0;
+}
+
+.footer-social {
+  position: relative;
+  margin: 0rem 2rem;
+}
+
+.footer-social span {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  position: relative;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.footer-social span a {
+  position: absolute;
+}
+
+.footer-social .fa-twitter {
+  color: #b9c3ca;
+}
+
+.footer-social .fa-twitter:hover {
+  color: rgba(0, 153, 255, 0.815);
+  -webkit-transition: all .5s ease-out;
+  transition: all .5s ease-out;
+}
+
+.footer-social .fa-instagram {
+  color: #e1306c;
+}
+
+.footer-social .fa-instagram:hover {
+  color: #ec739b;
+}
+
+.footer-social .fa-github {
+  color: white;
+}
+
+.footer-social .fa-github:hover {
+  color: #3a3737;
+}
+
+.footer-social .fa-linkedin {
+  color: #008cff;
+}
+
+.footer-social .fa-linkedin:hover {
+  color: #64b1f0;
+}
+
+.footer-social .a-icon {
+  font-size: 2.5rem;
+  margin: 1rem 1rem;
+  text-align: center;
+}
+
 header {
   width: 200px;
   height: 100%;
@@ -373,7 +453,7 @@ nav a:hover {
 }
 
 .nav-socials .fa-twitter {
-  color: #0099ff;
+  color: #b9c3ca;
 }
 
 .nav-socials .fa-twitter:hover {

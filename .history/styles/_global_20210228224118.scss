@@ -166,21 +166,18 @@ a {
     min-height: 20vh;
     width: 100%;
     background-color: black;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    position: sticky;
-    bottom: 0;
+    s
 
   }
 
   .footer-social {
     position: relative;
-    margin: 0rem 2rem;
+    
     
      span{
          display: flex;
          position: relative;
+        margin-top: 3rem;
         justify-content: center;
         align-items: center;
  

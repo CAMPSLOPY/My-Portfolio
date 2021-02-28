@@ -169,18 +169,13 @@ a {
     display: flex;
     justify-content: center;
     align-items: center;
-    position: sticky;
-    bottom: 0;
 
   }
 
   .footer-social {
     position: relative;
-    margin: 0rem 2rem;
-    
-     span{
          display: flex;
-         position: relative;
+        margin-top: 3rem;
         justify-content: center;
         align-items: center;
  
@@ -188,7 +183,7 @@ a {
          position: absolute;
         }
        
-     }
+     
      .fa-twitter {
          color: rgb(185, 195, 202);
  

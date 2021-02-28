@@ -162,72 +162,23 @@ a {
     }
   }
 
-  .footer-socials{
-    min-height: 20vh;
-    width: 100%;
-    background-color: black;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    position: sticky;
-    bottom: 0;
-
-  }
-
-  .footer-social {
-    position: relative;
-    margin: 0rem 2rem;
-    
-     span{
-         display: flex;
-         position: relative;
-        justify-content: center;
-        align-items: center;
- 
-        a{
-         position: absolute;
-        }
-       
-     }
-     .fa-twitter {
-         color: rgb(185, 195, 202);
- 
- 
- 
-         &:hover {
-             color: rgba(0, 153, 255, 0.815);
-             transition: all .5s ease-out;
-         }
- 
-     }
- 
-     .fa-instagram {
-         color: #e1306c;
-         &:hover{
-             color: #ec739b;
-     
-         }
-     
-     }
-     
-     .fa-github {
-         color: white;
-         &:hover{
-             color: rgb(58, 55, 55);
-         }
-     }
-     
-     .fa-linkedin {
-         color: rgb(0, 140, 255);
-         &:hover{
-             color: rgb(100, 177, 240);
-         }
-     }
-     
-     .a-icon {
-         font-size: 2.5rem;
-         margin: 1rem 1rem;
-         text-align: center;
-     }
-     
- }
+  <!-- mobile footer -->
+  <section class="footer-socials">
+    <span class="footer-social twitter">
+      <a href="#">
+        <i class="fab fa-twitter a-icon"></i>
+      </a>
+    </span>
+    <span class="footer-social github">
+      <a href="#">
+        <i class="fab fa-github a-icon"></i>
+      </a>
+    </span>
+    <span class="footer-social linkedin">
+      <a
+        href="https://www.linkedin.com/in/tola-joshua-shobowale-462525199/"
+      >
+        <i class="fab fa-linkedin a-icon"></i>
+      </a>
+    </span>
+  </section>

@@ -166,21 +166,17 @@ a {
     min-height: 20vh;
     width: 100%;
     background-color: black;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    position: sticky;
-    bottom: 0;
 
   }
 
   .footer-social {
     position: relative;
-    margin: 0rem 2rem;
+    left: 5%;
     
      span{
          display: flex;
          position: relative;
+        margin-top: 3rem;
         justify-content: center;
         align-items: center;
  
@@ -211,7 +207,7 @@ a {
      }
      
      .fa-github {
-         color: white;
+         color: black;
          &:hover{
              color: rgb(58, 55, 55);
          }
