@@ -203,7 +203,9 @@ input[type="submit"] {
           align-items: center;
   position: -webkit-sticky;
   position: sticky;
-  bottom: 0;
+  bottom: 0px;
+  -webkit-transition: 1s ease-in-out;
+  transition: 1s ease-in-out;
 }
 
 .footer-social {
