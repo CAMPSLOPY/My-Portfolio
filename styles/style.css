@@ -1128,7 +1128,7 @@ nav a:hover {
   html {
     font-size: 65%;
   }
-  .left .app-contact {
+  .left .app-contact h4 {
     font-size: 0.625rem;
   }
   .mobile-nav-content {
