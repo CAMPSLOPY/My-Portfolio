@@ -769,6 +769,7 @@ nav a:hover {
   font-size: 1.5rem;
   padding: 1.5rem 0rem;
   text-transform: uppercase;
+  font-style: italic;
 }
 
 #portfolio #cards .card h3 {
@@ -853,7 +854,7 @@ nav a:hover {
 #contact input {
   font-family: 'Montserrat', sans-serif;
   font-weight: 700;
-  letter-spacing: 0.0875rem;
+  letter-spacing: 1.4px;
   font-size: 2rem;
 }
 
@@ -863,9 +864,9 @@ nav a:hover {
 
 .container {
   -webkit-box-flex: 0;
-      -ms-flex: 0 1 43.75rem;
-          flex: 0 1 43.75rem;
-  padding: 0.625rem;
+      -ms-flex: 0 1 700px;
+          flex: 0 1 700px;
+  padding: 10px;
   margin: auto;
   position: relative;
 }
@@ -873,7 +874,7 @@ nav a:hover {
 .screen {
   position: relative;
   background-color: #D8DBE2;
-  border-radius: 0.9375rem;
+  border-radius: 15px;
   -webkit-box-shadow: 0 1px 4px rgba(0, 0, 0, 0.3), 0 0 40px rgba(0, 0, 0, 0.1);
           box-shadow: 0 1px 4px rgba(0, 0, 0, 0.3), 0 0 40px rgba(0, 0, 0, 0.1);
 }
@@ -885,9 +886,9 @@ nav a:hover {
   position: absolute;
   top: 0;
   bottom: 0;
-  left: 1.25rem;
-  right: 1.25rem;
-  border-radius: 0.9375rem;
+  left: 20px;
+  right: 20px;
+  border-radius: 15px;
   -webkit-box-shadow: 0 20px 40px rgba(0, 0, 0, 0.4);
           box-shadow: 0 20px 40px rgba(0, 0, 0, 0.4);
 }
@@ -896,7 +897,7 @@ nav a:hover {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  padding: 0.625rem 1.25rem;
+  padding: 10px 20px;
   background-color: #4d4d4f;
   border-top-left-radius: 15px;
   border-top-right-radius: 15px;
@@ -908,10 +909,10 @@ nav a:hover {
 
 .screen .screen-header .screen-header-left .screen-header-button {
   display: inline-block;
-  width: 0.5rem;
-  height: 0.5rem;
-  margin-right: 0.1875rem;
-  border-radius: 0.5rem;
+  width: 8px;
+  height: 8px;
+  margin-right: 3px;
+  border-radius: 8px;
   background-color: #fff;
 }
 
@@ -934,10 +935,10 @@ nav a:hover {
 }
 
 .screen .screen-header .screen-header-right .screen-header-ellipsis {
-  width: 0.1875rem;
-  height: 0.1875rem;
-  margin-left: 0.125rem;
-  border-radius: 0.5rem;
+  width: 3px;
+  height: 3px;
+  margin-left: 2px;
+  border-radius: 8px;
   background-color: #999;
 }
 
@@ -951,11 +952,11 @@ nav a:hover {
   -webkit-box-flex: 1;
       -ms-flex: 1;
           flex: 1;
-  padding: 0.625rem;
+  padding: 10px;
 }
 
 .screen .screen-body .screen-body-item .message {
-  margin-top: 2.5rem;
+  margin-top: 40px;
 }
 
 .screen .screen-body .screen-body-item .buttons {
@@ -967,9 +968,9 @@ nav a:hover {
   background-color: transparent;
   border: none;
   color: #ceb40a;
-  font-size: 0.875rem;
+  font-size: 14px;
   outline: none;
-  margin: 0.75rem;
+  margin: 12px;
 }
 
 .screen .screen-body .screen-body-item .buttons .app-form-button:hover {
@@ -1001,7 +1002,7 @@ nav a:hover {
           flex-direction: column;
   position: relative;
   color: #ceb40a;
-  font-size: 1.625rem;
+  font-size: 26px;
   font-weight: 500;
 }
 
@@ -1010,15 +1011,15 @@ nav a:hover {
   content: "";
   position: absolute;
   left: 0;
-  bottom: -0.625rem;
-  width: 1.5625rem;
-  height: 0.25rem;
+  bottom: -10px;
+  width: 25px;
+  height: 4px;
   background-color: black;
 }
 
 .left .app-contact {
   margin-top: 2em;
-  font-size: 0.6875rem;
+  font-size: 11px;
   font-weight: bold;
   color: black;
   position: relative;
@@ -1060,8 +1061,8 @@ nav a:hover {
 .app-form-group .fa-exclamation-circle {
   visibility: hidden;
   position: absolute;
-  top: 0.9375rem;
-  right: 0.625rem;
+  top: 15px;
+  right: 10px;
   -webkit-transition: .3s ease-in;
   transition: .3s ease-in;
   font-size: 2rem;
@@ -1078,7 +1079,7 @@ nav a:hover {
 }
 
 .app-form-group {
-  margin-bottom: 0.9375rem;
+  margin-bottom: 15px;
   position: relative;
   -webkit-animation: modalopen;
           animation: modalopen;
@@ -1089,10 +1090,10 @@ nav a:hover {
 .app-form-group input {
   position: relative;
   width: 100%;
-  padding: 0.625rem 0.625rem;
+  padding: 10px 10px;
   color: black;
   border-bottom: 1px solid #f0f0f0;
-  font-size: 0.875rem;
+  font-size: 14px;
   outline: none;
   -webkit-transition: border-color 1.2s;
   transition: border-color 1.2s;
@@ -1101,22 +1102,22 @@ nav a:hover {
 
 .app-form-group input::-webkit-input-placeholder {
   color: #666;
-  font-size: 0.625rem;
+  font-size: 10px;
 }
 
 .app-form-group input:-ms-input-placeholder {
   color: #666;
-  font-size: 0.625rem;
+  font-size: 10px;
 }
 
 .app-form-group input::-ms-input-placeholder {
   color: #666;
-  font-size: 0.625rem;
+  font-size: 10px;
 }
 
 .app-form-group input::placeholder {
   color: #666;
-  font-size: 0.625rem;
+  font-size: 10px;
 }
 
 .app-form-group input:focus {

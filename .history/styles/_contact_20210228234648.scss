@@ -11,7 +11,7 @@
     input {
         font-family: 'Montserrat', sans-serif;
         font-weight: 700;
-        letter-spacing: 1.4px;
+        letter-spacing: 0.0875rem;
         font-size: 2rem;
     }
 
@@ -21,8 +21,8 @@
 }
 
 .container {
-    flex: 0 1 700px;
-    padding: 10px;
+    flex: 0 1 43.75rem;
+    padding: 0.625rem;
     margin: auto;
     position: relative;
     
@@ -31,7 +31,7 @@
 .screen {
     position: relative;
     background-color: #D8DBE2;
-    border-radius: 15px;
+    border-radius: 0.9375rem;
     box-shadow:0 1px 4px rgba(0, 0, 0, 0.3), 0 0 40px rgba(0, 0, 0, 0.1);
 
     &::after {
@@ -41,16 +41,16 @@
         position: absolute;
         top: 0;
         bottom: 0;
-        left: 20px;
-        right: 20px;
-        border-radius: 15px;
+        left: 1.25rem;
+        right: 1.25rem;
+        border-radius: 0.9375rem;
         box-shadow: 0 20px 40px rgba(0, 0, 0, 0.4);
     }
 
 
     .screen-header {
         display: flex;
-        padding: 10px 20px;
+        padding: 0.625rem 1.25rem;
         background-color: #4d4d4f;
         border-top-left-radius: 15px;
         border-top-right-radius: 15px;
@@ -60,10 +60,10 @@
 
             .screen-header-button {
                 display: inline-block;
-                width: 8px;
-                height: 8px;
-                margin-right: 3px;
-                border-radius: 8px;
+                width: 0.5rem;
+                height: 0.5rem;
+                margin-right:0.1875rem;
+                border-radius: 0.5rem;
                 background-color: #fff;
             }
 
@@ -84,10 +84,10 @@
             display: flex;
 
             .screen-header-ellipsis {
-                width: 3px;
-                height: 3px;
-                margin-left: 2px;
-                border-radius: 8px;
+                width: 0.1875rem;
+                height:0.1875rem;
+                margin-left: 0.125rem;
+                border-radius: 0.5rem;
                 background-color: #999;
             }
         }
@@ -98,12 +98,12 @@
 
         .screen-body-item {
             flex: 1;
-            padding: 10px;
+            padding: 0.625rem;
             
 
            
             .message{
-                margin-top: 40px;
+                margin-top: 2.5rem;
             }
             .buttons{
                 margin: 0;
@@ -113,7 +113,7 @@
                     background-color: transparent;
                     border: none;
                     color: #ceb40a;
-                    font-size: 14px;
+                    font-size: 0.875rem;
                     outline: none;
                     margin: 12px;
                     
@@ -153,12 +153,11 @@
     }
     .app-contact{
         margin-top: 2em;
-        font-size: 11px;
+        font-size: 0.6875rem;
         font-weight: bold;
         color: black;
         position: relative;
         top: 65%;
-
     }
 }
 
