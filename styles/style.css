@@ -189,7 +189,7 @@ input[type="submit"] {
 }
 
 .footer-socials {
-  min-height: 20vh;
+  min-height: 10vh;
   width: 100%;
   background-color: black;
   display: -webkit-box;
