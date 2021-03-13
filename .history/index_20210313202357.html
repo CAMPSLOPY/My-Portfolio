@@ -6,14 +6,14 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
     <meta
       name="description"
-      content="Shobowale Tola is software developer that specializes in building awesome user interfaces, responsive mobile and deskstop applications 
+      content="Shobowale Tola is a software developer that specializes in building awesome user interfaces, responsive mobile and deskstop applications 
        with the  latest technologies like HTML|CSS|JAVASCRIPT|REACT|Vue|Angular etc.."
     />
     <meta name="robots" content="index,follow" />
     <!-- CSS stylesheet -->
     <link rel="stylesheet" href="./styles/style.css" />
 
-    <link rel="icon" href="/images/tola.jpeg" />
+    <link rel="icon" href="./images/favicon.ico" />
     <!-- GOOGLE FONTS -->
     <link
       href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500&display=swap"
@@ -32,6 +32,12 @@
       href="https://fonts.googleapis.com/css2?family=Pangolin&display=swap"
       rel="stylesheet"
     />
+    <!-- GSAP -->
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.6.0/gsap.min.js"
+      integrity="sha512-1dalHDkG9EtcOmCnoCjiwQ/HEB5SDNqw8d4G2MKoNwjiwMNeBAkudsBCmSlMnXdsH8Bm0mOd3tl/6nL5y0bMaQ=="
+      crossorigin="anonymous"
+    ></script>
     <!-- font awesome -->
     <script
       defer
@@ -39,6 +45,8 @@
       integrity="sha384-b3ua1l97aVGAPEIe48b4TC60WUQbQaGi2jqAWM90y0OZXZeyaTCWtBTKtjW2GXG1"
       crossorigin="anonymous"
     ></script>
+    <!-- AOS -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
     <!--Tailwind CDN-->
     <link
       rel="stylesheet"
@@ -52,10 +60,7 @@
   <body>
     <header>
       <div class="name">
-        <h3>
-          Tola 
-          Shobowale
-        </h3>
+        <h3 class="">Tola Shobowale</h3>
         <p>Software Developer</p>
       </div>
       <nav>
@@ -71,25 +76,29 @@
 
           <a id="side-contact" class="badge-user" href="#contact">
             <i class="fas fa-id-badge badge"></i>
-            <span >Contact</span>
+            <span>Contact</span>
           </a>
-          <a id="side-resume" class="sign-user" href="#resume">
+          <a
+            id="side-resume"
+            class="sign-user"
+            href="./images/My-Resume .pdf"
+          >
             <i class="fas fa-file-signature signature"></i>
             <span>Resume</span>
           </a>
         </ul>
       </nav>
-      <button class="lg:hidden">
-        <i class="fas fa-bars text-6xl relative mr-10"></i>
+      <button id="open" class="lg:hidden">
+        <i class="fas fa-bars text-4xl relative mr-10"></i>
       </button>
       <div id="socials">
         <span class="nav-socials twitter">
-          <a href="#">
+          <a href="https://twitter.com/Only1Camp">
             <i class="fab fa-twitter a-icon"></i>
           </a>
         </span>
         <span class="nav-socials github">
-          <a href="#">
+          <a href="https://github.com/CAMPSLOPY">
             <i class="fab fa-github a-icon"></i>
           </a>
         </span>
@@ -104,7 +113,34 @@
     </header>
     <!-- Main-Section -->
     <main id="main-section">
-      
+      <!--mobile nav-->
+      <div id="mobile-nav" class="mobile-nav md:hidden lg:hidden">
+        <div class="mobile-nav-content" id="mobile-nav-content">
+          <ul class="nav-links" id="nav-links">
+            <a id="" class="link" href="#home">
+              <i class="fas fa-home home-mobile text-4xl"></i>
+              <span class="text-2xl font-bold tracking-widest links">Home</span>
+            </a>
+            <a id="" class="link" href="#portfolio">
+              <i class="fas fa-tasks task-mobile text-4xl"></i>
+              <span class="text-2xl font-bold tracking-widest">Project</span>
+            </a>
+
+            <a id="" class="link" href="#contact">
+              <i class="fas fa-id-badge badge-mobile text-4xl"></i>
+              <span class="text-2xl font-bold tracking-widest">Contact</span>
+            </a>
+            <a id="" class="link" href="./images/Tola's Resume.pdf">
+              <i class="fas fa-file-signature resume-mobile text-4xl"></i>
+              <span class="text-2xl font-bold tracking-widest">Resume</span>
+            </a>
+          </ul>
+          <button id="close" class="">
+            <i class="fas fa-times text-6xl top-11 absolute right-11"></i>
+          </button>
+        </div>
+      </div>
+      <!--mobile nav end-->
       <!-- HERO SECTION -->
       <section id="home" class="hero">
         <div class="hero-text">
@@ -127,6 +163,30 @@
             </p>
           </div>
         </div>
+        <!-- mobile hero -->
+
+        <div
+          id="heading"
+          class="relative px-6 md:p-0 w-full md:w-10/12 m-auto flex flex-col items-center justify-center heading md:hidden"
+        >
+          <h2>
+            <span id="create" class="text-3xl tracking-widest"
+              >WELCOME TO MY PORTFOLIO</span
+            >
+          </h2>
+          <h2>
+            <span id="create" class="text-3xl tracking-widest"
+              >FRONT-END DEVELOPER</span
+            >
+          </h2>
+          <h2>
+            <span id="create" class="text-3xl tracking-widest"
+              >GLAD TO HAVE YOU HERE 👍
+            </span>
+          </h2>
+        </div>
+
+        <!-- mobile hero end -->
       </section>
 
       <!-- PORTFOLIO SECTION -->
@@ -139,15 +199,15 @@
         <div id="cards">
           <div class="card">
             <h3>SubscriptionAPP</h3>
-            <a href="#portfolio">
+            <a href="https://subscription-app-ten.vercel.app/">
               <img src="./images/project-2.png" alt="first-project-image" />
             </a>
             <h5>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Ullam,
-              laudantium?
+              This is a Data subscription page that allows users to pick and
+              select the best data plan that suites their needs...
             </h5>
             <div class="site-card">
-              <a href="https://campslopy.github.io/SubscriptionAPP/"
+              <a href="https://subscription-app-ten.vercel.app/"
                 ><h6>Live Site</h6></a
               >
               <a href="https://github.com/CAMPSLOPY/SubscriptionAPP">
@@ -156,41 +216,45 @@
             </div>
           </div>
           <div class="card">
-            <h3>MarioCart</h3>
-            <a href="#portfolio">
-              <img src="./images/project-2.png" alt="first-project-image" />
+            <h3>LoopingStudioApp</h3>
+            <a href="https://studio-loop-app.vercel.app/">
+              <img src="./images/looping app.png" alt="second-project-image" />
             </a>
             <h5>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Ullam,
-              laudantium?
+              I created this looping studio with a js animation lib-AOS and also
+              tailwind-css..Loopstudios has been producing world-class virtual
+              reality projects for some of the best companies.
             </h5>
             <div class="site-card">
-              <a href="https://campslopy.github.io/SubscriptionAPP/"
+              <a href="https://studio-loop-app.vercel.app/"
                 ><h6>Live Site</h6></a
               >
-              <a href="https://github.com/CAMPSLOPY/SubscriptionAPP">
+              <a href="https://github.com/CAMPSLOPY/StudioLoopApp">
                 <i class="fab fa-github a-icon"></i>
               </a>
             </div>
           </div>
           <div class="card">
-            <h3>SubscriptionAPP</h3>
-            <a href="#portfolio">
-              <img src="./images/project-2.png" alt="first-project-image" />
+            <h3>HangManApp</h3>
+            <a href="https://hang-man-git-main-campslopy.vercel.app/">
+              <img src="./images/hangman.png" alt="Hangman puzzle game" />
             </a>
             <h5>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Ullam,
-              laudantium?
+               The
+              game is centered around the use of letters to save a man from
+              dying (Its best played and enjoyed on your Desktop, Laptop etc)
+              ...
             </h5>
             <div class="site-card">
-              <a href="https://campslopy.github.io/SubscriptionAPP/"
+              <a href="https://hang-man-git-main-campslopy.vercel.app/"
                 ><h6>Live Site</h6></a
               >
-              <a href="https://github.com/CAMPSLOPY/SubscriptionAPP">
+              <a href="https://github.com/CAMPSLOPY/HangMan">
                 <i class="fab fa-github a-icon"></i>
               </a>
             </div>
           </div>
+          <!-- end of card -->
         </div>
       </section>
 
@@ -218,65 +282,96 @@
                   <span>CONTACT</span>
                   <span>ME</span>
                 </div>
-                <div class="app-contact">CONTACT INFO: +2348166250501</div>
+                <div class="app-contact">
+                  <h4>CONTACT INFO: +2348166250501</h4>
+                </div>
               </div>
 
               <div class="screen-body-item">
-                <div class="app-form">
+                <form class="app-form" id="form-body" action="">
                   <div class="app-form-group">
                     <input
+                      id="username"
                       class="app-form-control"
                       type="text"
-                      name="name"
+                      name="Name"
                       placeholder="NAME"
-                      required
                     />
+                    <i class="fas fa-check-circle"></i>
+                    <i class="fas fa-exclamation-circle"></i>
+                    <small>Error Message</small>
                   </div>
 
                   <div class="app-form-group">
                     <input
+                      id="email"
                       class="app-form-control"
                       type="email"
-                      name="email"
+                      name="Email"
                       placeholder="EMAIL"
-                      required
                     />
+                    <i class="fas fa-check-circle"></i>
+                    <i class="fas fa-exclamation-circle"></i>
+                    <small>Error Message</small>
                   </div>
 
                   <div class="app-form-group">
                     <input
+                      id="number"
                       class="app-form-control"
                       type="text"
-                      name="contact"
+                      name="Contact"
                       placeholder="CONTACT NO"
-                      required
                     />
+                    <i class="fas fa-check-circle"></i>
+                    <i class="fas fa-exclamation-circle"></i>
+                    <small>Error Message</small>
                   </div>
 
-                  <div class="app-form-group message">
+                  <div class="app-form-group">
                     <input
+                      id="message"
                       class="app-form-control"
-                      type="text"
-                      name="message"
-                      placeholder="MESSAGE"
+                      type="type"
+                      name="Message"
+                      placeholder="Write in here... "
                     />
                   </div>
 
-                  <div class="app-form-group buttons">
-                    <button class="app-form-button">CANCEL</button>
-                    <button class="app-form-button">SEND</button>
-                  </div>
-                </div>
+                  <input
+                    type="submit"
+                    id="submit-btn"
+                    value="Submit"
+                    class="submit-btn"
+                    id="submit-btn"
+                  />
+                </form>
               </div>
             </div>
           </div>
         </div>
       </section>
-      <section class="resume">
-        <div class="resume-section">
-          <img src="" alt="" />
-        </div>
+      <!-- mobile footer -->
+      <section class="footer-socials md:hidden">
+        <span class="footer-social twitter">
+          <a href="https://twitter.com/Only1Camp">
+            <i class="fab fa-twitter a-icon"></i>
+          </a>
+        </span>
+        <span class="footer-social github">
+          <a href="https://github.com/CAMPSLOPY">
+            <i class="fab fa-github a-icon"></i>
+          </a>
+        </span>
+        <span class="footer-social linkedin">
+          <a
+            href="https://www.linkedin.com/in/tola-joshua-shobowale-462525199/"
+          >
+            <i class="fab fa-linkedin a-icon"></i>
+          </a>
+        </span>
       </section>
+      <!-- mobile footer end -->
     </main>
 
     <!-- SCRIPT SECTION -->
@@ -288,11 +383,7 @@
       crossorigin="anonymous"
     ></script>
     <!-- gsap -->
-    <script
-      src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.1.3/TweenMax.min.js"
-      integrity="sha256-lPE3wjN2a7ABWHbGz7+MKBJaykyzqCbU96BJWjio86U="
-      crossorigin="anonymous"
-    ></script>
+
     <!-- THREE JS -->
     <script
       src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r118/three.js"
@@ -301,6 +392,9 @@
     ></script>
     <!-- hover-effect js -->
     <script src="hover-effect.umd.js"></script>
+    <!-- AOS -->
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script src="./aos.js"></script>
     <script src="app.js"></script>
   </body>
 </html>
